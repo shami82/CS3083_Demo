@@ -65,4 +65,4 @@ Add your frontend templates inside the `templates/` folder.
 
 ### 7. Running the app
 To run the app, run: 
-    ```python app.py```
+```python app.py```
