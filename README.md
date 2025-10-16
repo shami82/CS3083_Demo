@@ -41,7 +41,7 @@ Create your database using your preferred MySQL client or CLI.
 ---
 
 ### 4. Update config.py
-    Configure your database connection like this:
+Configure your database connection like this:
     ```MYSQL_HOST = 'localhost'
         MYSQL_USER = 'your_mysql_user'
         MYSQL_PASSWORD = 'your_mysql_password'
@@ -50,14 +50,15 @@ Create your database using your preferred MySQL client or CLI.
 ---
 
 ### 5. Create app.py
-    Implement your Flask backend logic here.
+Implement your Flask backend logic here.
 
 ---
 
 ### 6. Create HTML Files 
-    Add your frontend templates inside the `templates/` folder.
+Add your frontend templates inside the `templates/` folder.
 
 ---
 
-### 7. To run the app, run: 
+### 7. Running the app
+To run the app, run: 
     ```python app.py```
