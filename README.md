@@ -1,4 +1,4 @@
-# CS3083_Demo
+# CS3083_Demo - Flask
 
 ## Prerequisites
 - Python
