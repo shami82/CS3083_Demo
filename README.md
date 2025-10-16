@@ -20,11 +20,12 @@ Create your database using your preferred MySQL client or CLI.
 1. Create a virtual environment:
    ```python -m venv venv```
 
-2. Acvitate the virtual environment:
+2. Activate the virtual environment:
    ```source venv/bin/activate  # On Windows: venv\Scripts\activate```
 
 3. Create a `requirements.txt` file containing:
-   ```flask\nflask-mysqldb```
+   ```flask
+   flask-mysqldb```
 
 5. Install the dependencies
    ```pip install -r requirements.txt```
@@ -32,10 +33,10 @@ Create your database using your preferred MySQL client or CLI.
 ---
 
 ### 3. Setup workspace
-    - `templates/` - stores the html files
-    - `static/` - stores CSS, images, and JS files (each in respective subfolders)
-    - `app.py` - main backend application
-    - `config.py` - database connection configuration
+ - `templates/` - stores the HTML files
+ - `static/` - stores CSS, images, and JS files (each in respective subfolders)
+ - `app.py` - main backend application
+ - `config.py` - database connection configuration
 
 ---
 
