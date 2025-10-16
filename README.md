@@ -27,7 +27,7 @@ Create your database using your preferred MySQL client or CLI.
    ```flask
    flask-mysqldb```
 
-4. Install the dependencies
+5. Install the dependencies
    ```pip install -r requirements.txt```
 
 ---
