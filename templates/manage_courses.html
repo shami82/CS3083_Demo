@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Courses</title>
+    <!-- to connect the css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+    </div>
+    <h1>Courses for {{ student[0] }} {{ student[1] }}</h1>
+
+    <h2>Enrolled Courses</h2>
+    <table>
+        <tr><th>Course</th><th>Term</th><th>Action</th></tr>
+        {% for c in enrolled %}
+        <tr>
+            <td>{{ c[1] }}</td>
+            <td>{{ c[2] }}</td>
+            <td>
+                <form method="post" action="{{ url_for('drop_course', student_id=student_id, c_sec_id=c[0]) }}">
+                    <input type="submit" value="Drop">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Available Courses</h2>
+    <table>
+        <tr><th>Course</th><th>Term</th><th>Action</th></tr>
+        {% for c in not_enrolled %}
+        <tr>
+            <td>{{ c[1] }}</td>
+            <td>{{ c[2] }}</td>
+            <td>
+                <form method="post" action="{{ url_for('enroll_course', student_id=student_id, c_sec_id=c[0]) }}">
+                    <input type="submit" value="Enroll">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

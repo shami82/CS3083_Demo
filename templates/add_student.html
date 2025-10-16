@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Student</title>
+        <!-- to connect the css -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+    </div>
+    <h1>Add a New Student</h1>
+    <form method="post">
+        First Name: <input type="text" name="s_first"><br>
+        Last Name: <input type="text" name="s_last"><br>
+        Middle Initial: <input type="text" name="s_mi"><br>
+        Address: <input type="text" name="s_add"><br>
+        City: <input type="text" name="s_city"><br>
+        State: <input type="text" name="s_state"><br>
+        ZIP: <input type="text" name="s_zip"><br>
+        Phone: <input type="text" name="s_phone"><br>
+        Class: <input type="text" name="s_class"><br>
+        Date of Birth (YYYY-MM-DD): <input type="text" name="s_dob"><br>
+        PIN: <input type="text" name="s_pin"><br>
+        Faculty ID (Advisor): <input type="text" name="f_id"><br>
+        <input type="submit" value="Add Student">
+    </form>
+</body>
+</html>
