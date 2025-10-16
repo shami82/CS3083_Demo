@@ -50,13 +50,13 @@ Create your database using your preferred MySQL client or CLI.
 
 ### 4. Update config.py
 Configure your database connection like this:
+   
    ```
    MYSQL_HOST = 'localhost'
    MYSQL_USER = 'your_mysql_user'
    MYSQL_PASSWORD = 'your_mysql_password'
    MYSQL_DB = 'your_db_name'
    ```
-
 ---
 
 ### 5. Create app.py
