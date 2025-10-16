@@ -18,19 +18,25 @@ Create your database using your preferred MySQL client or CLI.
 ### 2. Set Up the Python Environment
 
 1. Create a virtual environment:
-   ```python -m venv venv```
+   ```
+   python -m venv venv
+   ```
 
-2. Activate the virtual environment:
-   ```source venv/bin/activate  # On Windows: venv\Scripts\activate```
+3. Activate the virtual environment:
+   ```
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-3. Create a `requirements.txt` file containing:
+5. Create a `requirements.txt` file containing:
    ```
    flask
    flask-mysqldb
    ```
 
-5. Install the dependencies
-   ```pip install -r requirements.txt```
+6. Install the dependencies
+   ```
+   pip install -r requirements.txt
+   ```
 
 ---
 
@@ -65,4 +71,6 @@ Add your frontend templates inside the `templates/` folder.
 
 ### 7. Running the app
 To run the app, run: 
-```python app.py```
+```
+python app.py
+```
