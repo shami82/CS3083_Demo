@@ -24,8 +24,10 @@ Create your database using your preferred MySQL client or CLI.
    ```source venv/bin/activate  # On Windows: venv\Scripts\activate```
 
 3. Create a `requirements.txt` file containing:
-   ```flask
-   flask-mysqldb```
+   ```
+   flask
+   flask-mysqldb
+   ```
 
 5. Install the dependencies
    ```pip install -r requirements.txt```
